@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { MoveUpRight } from "lucide-react";
-
+import githubProfile from "../../assets/github-profile.png";
 function Contact() {
   const sectionRefC = useRef(null);
 
@@ -27,7 +27,7 @@ function Contact() {
       <p className="sectionTitle">contact me</p>
 
       <div className="contactSub">
-        <img src="./src/assets/github-profile.png" alt="profile" />
+        <img src={githubProfile} alt="profile" />
 
         <ul className="navLi">
           <li>
@@ -39,7 +39,11 @@ function Contact() {
           </li>
 
           <li>
-            <a href="mailto:kailasm917@gmail.com" target="_blank" rel="noopener">
+            <a
+              href="mailto:kailasm917@gmail.com"
+              target="_blank"
+              rel="noopener"
+            >
               <span>kailasm917@gmail.com</span>
             </a>
           </li>
