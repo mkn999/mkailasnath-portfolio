@@ -33,18 +33,6 @@ function App() {
             turning dreams into reality
           </p>
         </section> */}
-        {/* <motion.section
-          ref={sectionRef}
-          style={{ scale, opacity }}
-          className="sectionContainer"
-          id="about"
-        >
-          <p className="landingText">
-            I am a developer who <span id="highlight">loves</span>
-            <br />
-            turning dreams into reality
-          </p>
-        </motion.section> */}
         {/* projects zection */}
         {/* contact section */}
         <Contact />
