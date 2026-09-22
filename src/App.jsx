@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import ProjectCard from "./components/projectCard/projectCard";
+// import ProjectCard from "./components/projectCard/projectCard";
 import PageContainer from "./components/pageContainer/pageContainer";
 import Navbar from "./components/navbar/Navbar";
 import { MoveUpRight } from "lucide-react";
