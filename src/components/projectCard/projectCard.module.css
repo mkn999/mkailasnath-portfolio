@@ -1,0 +1,36 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 240px;
+  border: 1px solid white;
+  border-radius: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 100%;
+}
+.projectTitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+.projectArrow {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  color: #e1ff00;
+}
+.projectDesc {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
