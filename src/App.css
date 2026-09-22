@@ -152,5 +152,7 @@
   .aboutSCS {
     font-size: 15px;
     gap: 5px;
+    width: auto;
+    
   }
 }
