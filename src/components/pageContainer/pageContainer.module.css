@@ -1,8 +1,11 @@
 .pageContainer {
-  width: 100%;
+  /* width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; */
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-inline: clamp(20px, 4vw, 40px);
 }
