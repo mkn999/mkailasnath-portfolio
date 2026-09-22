@@ -32,3 +32,8 @@
 .navLi li a:hover {
   color: #e1ff00;
 }
+@media screen and (max-width:600px) {
+  .navLi li{
+    font-size: 15px;
+  }
+}

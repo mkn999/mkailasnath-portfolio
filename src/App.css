@@ -27,6 +27,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 10px;
+  height: 90vh !important;
 }
 .contactSub {
   display: flex;
@@ -86,6 +87,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .landingText {
+    font-size: 50px;
+  }
   .contactSub {
     max-width: 300px;
   }
