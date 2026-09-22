@@ -24,8 +24,11 @@
   cursor: pointer;
   z-index: 999;
 }
-.navLi li a
-{
-    text-decoration: none;
-    color: inherit;
+.navLi li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease-in-out;
+}
+.navLi li a:hover {
+  color: #e1ff00;
 }
