@@ -5,7 +5,7 @@ import PageContainer from "./components/pageContainer/pageContainer";
 import Navbar from "./components/navbar/Navbar";
 // import { MoveUpRight } from "lucide-react";
 import Contact from "./components/Contact/Contact";
-import About from "./components/About/About";
+// import About from "./components/About/About";
 function App() {
   return (
     <div>
@@ -19,7 +19,7 @@ function App() {
           </p>
         </main>
         {/* about zection */}
-        <About />
+        {/* <About /> */}
         {/* <section
           // initial={{ opacity: 0, scale: 0 }}
           // whileInView={{ opacity: 1, scale: 1 }}
