@@ -10,17 +10,9 @@ function Contact() {
     offset: ["start end", "center center"],
   });
 
-  const scaleC = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0.7, 1]
-  );
+  const scaleC = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
-  const opacityC = useTransform(
-    scrollYProgress,
-    [0, 0.5],
-    [0, 1]
-  );
+  const opacityC = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
     <motion.section
@@ -35,14 +27,11 @@ function Contact() {
       <p className="sectionTitle">contact me</p>
 
       <div className="contactSub">
-        <img
-          src="./src/assets/github-profile.png"
-          alt="profile"
-        />
+        <img src="./src/assets/github-profile.png" alt="profile" />
 
         <ul className="navLi">
           <li>
-            <a href="#home">
+            <a href="https://github.com/mkn999" target="_blank" rel="noopener">
               <span>
                 github <MoveUpRight />
               </span>
@@ -50,13 +39,17 @@ function Contact() {
           </li>
 
           <li>
-            <a href="#about">
+            <a href="mailto:kailasm917@gmail.com" target="_blank" rel="noopener">
               <span>kailasm917@gmail.com</span>
             </a>
           </li>
 
           <li>
-            <a href="#project">
+            <a
+              href="https://www.linkedin.com/in/mkn999/"
+              target="_blank"
+              rel="noopener"
+            >
               <span>
                 linkedin <MoveUpRight />
               </span>
@@ -65,9 +58,7 @@ function Contact() {
         </ul>
       </div>
 
-      <p className="footer">
-        2026 M Kailasnath. All rights reserved
-      </p>
+      <p className="footer">2026 M Kailasnath. All rights reserved</p>
     </motion.section>
   );
 }

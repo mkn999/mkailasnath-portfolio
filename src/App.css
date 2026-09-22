@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* border: 1px solid white; */
 }
 .landingText {
   font-family: "Space Grotesk", sans-serif;
@@ -22,6 +23,8 @@
   text-align: center;
   font-size: 30px;
   color: #e1ff00;
+  /* align-self: flex-start;
+  justify-self: flex-start; */
 }
 /* contact section */
 
@@ -92,6 +95,31 @@
   color: #e1ff00;
 }
 
+/* about */
+#about {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 90vh !important;
+  gap: 20%;
+}
+.aboutSubContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 0px 50px;
+}
+.aboutSCF,
+.aboutSCS {
+  font-family: "Space Grotesk", sans-serif;
+  min-width: 567;
+  color: #ffffff;
+  max-width: 506px;
+  max-height: 544px;
+  font-size: 20px;
+  text-align: justify;
+}
+/*  */
 @media screen and (max-width: 600px) {
   .landingText {
     font-size: 50px;
