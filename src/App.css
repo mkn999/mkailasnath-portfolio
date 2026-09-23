@@ -166,21 +166,34 @@
 /*  */
 @media (max-width: 768px) {
   #about {
-    gap: 20px;
-    padding: 10px;
     min-height: auto !important;
+    height: auto !important;
+
+    padding: 50px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 30px;
   }
 
   .aboutSubContainer {
+    width: 100%;
+    height: auto !important;
+
+    display: flex;
     flex-direction: column;
 
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: flex-start;
 
-    gap: 30px;
+    gap: 35px;
 
-    padding: 0 10px;
-    margin-bottom: 50px;
+    padding: 0;
+    margin: 0;
 
     box-sizing: border-box;
   }
@@ -189,17 +202,25 @@
   .aboutSCS {
     width: 100%;
     max-width: 100%;
-    min-width: 0;
 
-    font-size: 15px;
-    line-height: 1.6;
+    /* Important: remove desktop sizing */
+    min-width: 0;
+    height: auto !important;
+    max-height: none;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.55;
 
     text-align: justify;
 
     box-sizing: border-box;
+
+    overflow: visible;
   }
 }
-
 @media screen and (max-width: 600px) {
   .landingText {
     font-size: 50px;
