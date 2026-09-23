@@ -15,12 +15,12 @@ function Contact() {
   const opacityC = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
-    <motion.section
-      ref={sectionRefC}
-      style={{
-        scale: scaleC,
-        opacity: opacityC,
-      }}
+    <section
+      // ref={sectionRefC}
+      // style={{
+      //   scale: scaleC,
+      //   opacity: opacityC,
+      // }}
       className="sectionContainer"
       id="contact"
     >
@@ -63,7 +63,7 @@ function Contact() {
       </div>
 
       <p className="footer">2026 M Kailasnath. All rights reserved</p>
-    </motion.section>
+    </section>
   );
 }
 

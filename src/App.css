@@ -23,6 +23,7 @@
   text-align: center;
   font-size: 30px;
   color: #e1ff00;
+  text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 101px;
   /* align-self: flex-start;
   justify-self: flex-start; */
 }
@@ -43,7 +44,7 @@
   /* width: auto; */
   align-items: center;
 }
-.contactSub img{
+.contactSub img {
   width: 400px;
 }
 .navLi {
@@ -97,6 +98,24 @@
 }
 #highlight {
   color: #e1ff00;
+  /* text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 173px; */
+  animation: glow 9s ease-in-out infinite;
+}
+#highlight-none {
+  color: #ffffff;
+  /* text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 173px; */
+  animation: glow 9s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: rgba(225, 255, 0, 0.3) 0 0 100px;
+  }
+
+  50% {
+    text-shadow: rgba(225, 255, 0, 0.9) 0 0 173px;
+  }
 }
 
 /* about */
@@ -110,8 +129,10 @@
 .aboutSubContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 100px;
   padding: 0px 50px;
+  height: 90vh;
 }
 .aboutSCF,
 .aboutSCS {
@@ -122,6 +143,7 @@
   max-height: 544px;
   font-size: 20px;
   text-align: justify;
+  color: #e1ff00;
 }
 /*  */
 @media screen and (max-width: 600px) {
@@ -144,7 +166,7 @@
   .footer {
     font-size: 15px;
   }
-  .contactSub img{
+  .contactSub img {
     max-width: 300px;
   }
   #about {
@@ -153,6 +175,7 @@
   .aboutSubContainer {
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 50px;
   }
 
   .aboutSCF,

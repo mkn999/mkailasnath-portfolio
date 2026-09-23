@@ -4,6 +4,7 @@ import { MoveUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { client } from "../../sanity/client";
 import { projectsQuery } from "../../sanity/queries";
+import Loader from "../Loader/Loader";
 export default function ProjectCard() {
   const handleClick = (link) => {
     window.open(link, "_blank", "noopener");
@@ -29,7 +30,7 @@ export default function ProjectCard() {
   }, []);
 
   if (loading) {
-    return <div>Loading..</div>;
+    return <Loader />;
   }
 
   return (
@@ -44,7 +45,9 @@ export default function ProjectCard() {
             }}
           >
             <div className={styles.subContainer}>
-              <p className={styles.projectTitle}>{dayta?.projectName}</p>
+              <p className={styles.projectTitle} id="projectName">
+                {dayta?.projectName}
+              </p>
 
               <p className={styles.projectArrow}>
                 {/* <a href={dayta?.projectUrl} target="_blank" rel="noopener"> */}
