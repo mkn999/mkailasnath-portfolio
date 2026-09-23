@@ -5,38 +5,51 @@ import { useState, useEffect } from "react";
 import { client } from "../../sanity/client";
 import { projectsQuery } from "../../sanity/queries";
 export default function ProjectCard() {
-  const handleClick = () => {
-    alert("CARD CLICKED");
-    console.log("CARD CLICKED");
+  const handleClick = (link) => {
+    window.open(link, "_blank", "noopener");
   };
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     async function getProjects() {
       try {
+        setLoading(true);
         const data = await client.fetch(projectsQuery);
         setData(data);
         console.log("sanity data:", data);
       } catch (error) {
         console.error("sanity error:", error);
+        setLoading(false);
+      } finally {
+        setLoading(false);
       }
     }
 
     getProjects();
   }, []);
 
+  if (loading) {
+    return <div>Loading..</div>;
+  }
+
   return (
     <div className={styles.projectMain}>
       <p className={styles.projectSectionTitle}>works</p>
       <div className={styles.projectWrapper}>
         {data.map((dayta) => (
-          <div className={styles.projectContainer}>
+          <div
+            className={styles.projectContainer}
+            onClick={() => {
+              handleClick(dayta?.projectUrl);
+            }}
+          >
             <div className={styles.subContainer}>
               <p className={styles.projectTitle}>{dayta?.projectName}</p>
 
               <p className={styles.projectArrow}>
-                <a href={dayta?.projectUrl} target="_blank" rel="noopener">
-                  <MoveUpRight />
-                </a>
+                {/* <a href={dayta?.projectUrl} target="_blank" rel="noopener"> */}
+                <MoveUpRight />
+                {/* </a> */}
               </p>
             </div>
 

@@ -16,10 +16,11 @@
 }
 .projectWrapper {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* width: 200px; */
   height: 100%;
   /* gap: 50px; */
+  justify-content: space-between;
 }
 .projectContainer {
   display: flex;
@@ -36,6 +37,12 @@
   z-index: 1;
   gap: 60px;
   max-width: 800px;
+}
+.projectContainer p {
+  transition: color 0.2s ease-in-out;
+}
+.projectContainer:hover p {
+  color: #e1ff00;
 }
 .projectContainer a {
   text-decoration: none;
@@ -94,7 +101,7 @@
   }
   .projectWrapper {
     flex-direction: column;
-    justify-content: space-around
+    justify-content: space-around;
     /* gap: 100px; */
   }
 }
