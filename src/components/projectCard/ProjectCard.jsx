@@ -1,4 +1,4 @@
-import { div, p } from "framer-motion/client";
+import { div, p, style } from "framer-motion/client";
 import styles from "./projectCard.module.css";
 import { MoveUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -27,21 +27,23 @@ export default function ProjectCard() {
   return (
     <div className={styles.projectMain}>
       <p className={styles.projectSectionTitle}>works</p>
-      {data.map((dayta) => (
-        <div className={styles.projectContainer}>
-          <div className={styles.subContainer}>
-            <p className={styles.projectTitle}>{dayta?.projectName}</p>
+      <div className={styles.projectWrapper}>
+        {data.map((dayta) => (
+          <div className={styles.projectContainer}>
+            <div className={styles.subContainer}>
+              <p className={styles.projectTitle}>{dayta?.projectName}</p>
 
-            <p className={styles.projectArrow}>
-              <a href={dayta?.projectUrl} target="_blank" rel="noopener">
-                <MoveUpRight />
-              </a>
-            </p>
+              <p className={styles.projectArrow}>
+                <a href={dayta?.projectUrl} target="_blank" rel="noopener">
+                  <MoveUpRight />
+                </a>
+              </p>
+            </div>
+
+            <p className={styles.projectDesc}>{dayta?.projectDescription}</p>
           </div>
-
-          <p className={styles.projectDesc}>{dayta?.projectDescription}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

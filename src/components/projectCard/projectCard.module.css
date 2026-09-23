@@ -14,6 +14,13 @@
   color: #e1ff00;
   top: 0;
 }
+.projectWrapper {
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 200px; */
+  height: 100%;
+  /* gap: 50px; */
+}
 .projectContainer {
   display: flex;
   flex-direction: column;
@@ -63,7 +70,7 @@
 }
 @media screen and (max-width: 767px) {
   .projectMain {
-    height: auto !important;
+    height: 60vh !important;
     min-height: 0;
     gap: 30px; /* adjust as needed */
     padding-bottom: 10px;
@@ -84,5 +91,10 @@
   .projectContainer {
     gap: 20px;
     height: 150px !important;
+  }
+  .projectWrapper {
+    flex-direction: column;
+    justify-content: space-around
+    /* gap: 100px; */
   }
 }
