@@ -266,10 +266,14 @@
 /* ========================= */
 
 @media (max-width: 480px) {
+
   #about {
     padding: 10px 8px;
   }
-
+  #contact {
+    height: 60vh !important;
+    min-height: 60vh !important;
+  }
   .aboutSubContainer {
     padding: 0 5px;
     gap: 25px;
