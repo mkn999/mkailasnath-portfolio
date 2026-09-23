@@ -3,18 +3,7 @@ import styles from "./navbar.module.css";
 import { client } from "../../sanity/client";
 import { projectsQuery } from "../../sanity/queries";
 export default function Navbar() {
-  useEffect(() => {
-    async function getProjects() {
-      try {
-        const data = await client.fetch(projectsQuery);
-        console.log("sanity data:", data);
-      } catch (error) {
-        console.error("sanity error:", error);
-      }
-    }
 
-    getProjects();
-  }, []);
 
   return (
     <div className={styles.navCont}>

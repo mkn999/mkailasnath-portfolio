@@ -41,6 +41,10 @@
   gap: 30px;
   /* width: 400px; */
   /* width: auto; */
+  align-items: center;
+}
+.contactSub img{
+  width: 400px;
 }
 .navLi {
   list-style-type: none;
@@ -140,6 +144,9 @@
   .footer {
     font-size: 15px;
   }
+  .contactSub img{
+    max-width: 200px;
+  }
   #about {
     gap: 20px;
   }
@@ -153,6 +160,5 @@
     font-size: 15px;
     gap: 5px;
     width: auto;
-    
   }
 }

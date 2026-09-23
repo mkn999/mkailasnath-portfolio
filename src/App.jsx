@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-// import ProjectCard from "./components/projectCard/projectCard";
 import PageContainer from "./components/pageContainer/pageContainer";
 import Navbar from "./components/navbar/Navbar";
-// import { MoveUpRight } from "lucide-react";
 import Contact from "./components/Contact/Contact";
+import ProjectCard from "./components/projectCard/ProjectCard";
 // import About from "./components/About/About";
 function App() {
   return (
@@ -20,21 +19,7 @@ function App() {
         </main>
         {/* about zection */}
         {/* <About /> */}
-        {/* <section
-          // initial={{ opacity: 0, scale: 0 }}
-          // whileInView={{ opacity: 1, scale: 1 }}
-          // transition={{ duration: 1 }}
-          className="sectionContainer"
-          id="about"
-        >
-          <p className="landingText">
-            I am a developer who <span id="highlight">loves</span>
-            <br />
-            turning dreams into reality
-          </p>
-        </section> */}
-        {/* projects zection */}
-        {/* contact section */}
+        <ProjectCard />
         <Contact />
       </PageContainer>
     </div>

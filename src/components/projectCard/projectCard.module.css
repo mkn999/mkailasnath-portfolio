@@ -1,7 +1,23 @@
+.projectMain {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 10px;
+  height: 90vh !important;
+}
+.projectSectionTitle {
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #e1ff00;
+  top: 0;
+}
 .projectContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: auto;
   max-height: 240px;
   border: 1px solid white;
   border-radius: 20px;
@@ -11,6 +27,12 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+  gap: 60px;
+  max-width: 800px;
+}
+.projectContainer a {
+  text-decoration: none;
+  color: inherit;
 }
 .subContainer {
   display: flex;
@@ -33,4 +55,34 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 30px;
   color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .projectContainer {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .projectMain {
+    height: auto !important;
+    min-height: 0;
+    gap: 30px; /* adjust as needed */
+    padding-bottom: 10px;
+  }
+
+  .projectContainer {
+    gap: 20px;
+    height: 150px !important;
+  }
+
+  .projectTitle,
+  .projectDesc,
+  .projectArrow {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projectContainer {
+    gap: 20px;
+    height: 150px !important;
+  }
 }
