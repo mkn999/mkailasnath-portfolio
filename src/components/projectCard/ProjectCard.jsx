@@ -33,7 +33,7 @@ export default function ProjectCard() {
   }
 
   return (
-    <div className={styles.projectMain}>
+    <div className={styles.projectMain} id="project">
       <p className={styles.projectSectionTitle}>works</p>
       <div className={styles.projectWrapper}>
         {data.map((dayta) => (
