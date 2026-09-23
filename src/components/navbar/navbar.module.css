@@ -1,22 +1,30 @@
 .navCont {
   display: block;
   width: 100%;
-  top: 0;
   position: sticky;
-  padding: 30px 0px;
+  top: 0;
+  z-index: 999;
 
-  /* background: rgba(11, 10, 10, 0.4); */
+  padding: 30px 0;
+
+  /* Glass effect */
+  background: rgba(11, 10, 10, 0.35);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
+
 .navLi {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   justify-content: center;
+  align-items: center;
   gap: 40px;
+
+  margin: 0;
+  padding: 0;
 }
+
 .navLi li {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
@@ -24,16 +32,37 @@
   cursor: pointer;
   z-index: 999;
 }
+
 .navLi li a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.1s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
+
 .navLi li a:hover {
   color: #e1ff00;
 }
-@media screen and (max-width:600px) {
-  .navLi li{
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media screen and (max-width: 600px) {
+  .navCont {
+    width: 100%;
+    padding: 20px 0;
+
+    background: rgba(11, 10, 10, 0.35);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .navLi {
+    gap: 20px;
+  }
+
+  .navLi li {
     font-size: 15px;
   }
 }
