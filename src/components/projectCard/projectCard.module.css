@@ -22,7 +22,7 @@
   /* width: 200px; */
   height: 100%;
   /* gap: 50px; */
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .projectContainer {
   display: flex;
