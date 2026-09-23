@@ -6,8 +6,8 @@ export default function Navbar() {
 
   const backgroundColor = useTransform(
     scrollY,
-    [0, 300],
-    ["rgba(10, 10, 10, 0.5)", "rgba(10, 10, 10, 1)"],
+    [0, 500],
+    ["rgba(10, 10, 10, 0.1)", "rgba(10, 10, 10, 1)"],
   );
 
   return (
