@@ -109,4 +109,7 @@
     justify-content: space-around;
     /* gap: 100px; */
   }
+  .projectSectionTitle {
+    text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 71px;
+  }
 }

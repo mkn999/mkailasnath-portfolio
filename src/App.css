@@ -280,4 +280,7 @@
     font-size: 14px;
     line-height: 1.55;
   }
+  .sectionTitle {
+    text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 71px;
+  }
 }
