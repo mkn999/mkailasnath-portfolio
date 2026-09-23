@@ -24,6 +24,7 @@
   font-size: 30px;
   color: #e1ff00;
   text-shadow: rgba(225, 255, 0, 0.9) 0px 0px 101px;
+  margin-bottom: 20px;
   /* align-self: flex-start;
   justify-self: flex-start; */
 }
@@ -121,31 +122,84 @@
 /* about */
 #about {
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center; /* vertical centering */
+  align-items: center; /* horizontal centering */
+
   padding: 10px;
   min-height: 90vh !important;
-  gap: 20%;
+  gap: 40px;
 }
 .aboutSubContainer {
   display: flex;
   flex-direction: row;
+
   align-items: center;
+  justify-content: center;
+
   gap: 100px;
-  padding: 0px 50px;
-  height: 90vh;
+
+  width: 100%;
+  max-width: 1200px;
+
+  box-sizing: border-box;
 }
+
 .aboutSCF,
 .aboutSCS {
   font-family: "Space Grotesk", sans-serif;
-  min-width: 567;
-  color: #ffffff;
-  max-width: 506px;
-  max-height: 544px;
-  font-size: 20px;
-  text-align: justify;
+
+  width: 500px;
+  height: 500px;
+
+  box-sizing: border-box;
+
   color: #e1ff00;
+
+  font-size: 20px;
+  line-height: 1.6;
+
+  text-align: justify;
+
+  padding: 0;
 }
+
 /*  */
+@media (max-width: 768px) {
+  #about {
+    gap: 20px;
+    padding: 10px;
+    min-height: auto !important;
+  }
+
+  .aboutSubContainer {
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    gap: 30px;
+
+    padding: 0 10px;
+    margin-bottom: 50px;
+
+    box-sizing: border-box;
+  }
+
+  .aboutSCF,
+  .aboutSCS {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    text-align: justify;
+
+    box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .landingText {
     font-size: 50px;
@@ -183,5 +237,26 @@
     font-size: 15px;
     gap: 5px;
     width: auto;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  #about {
+    padding: 10px 8px;
+  }
+
+  .aboutSubContainer {
+    padding: 0 5px;
+    gap: 25px;
+  }
+
+  .aboutSCF,
+  .aboutSCS {
+    font-size: 14px;
+    line-height: 1.55;
   }
 }

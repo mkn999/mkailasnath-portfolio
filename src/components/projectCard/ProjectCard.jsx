@@ -50,9 +50,7 @@ export default function ProjectCard() {
               </p>
 
               <p className={styles.projectArrow}>
-                {/* <a href={dayta?.projectUrl} target="_blank" rel="noopener"> */}
                 <MoveUpRight />
-                {/* </a> */}
               </p>
             </div>
 
